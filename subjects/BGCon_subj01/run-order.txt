@@ -1,0 +1,13 @@
+t1_mprage
+ph1_main_1
+ph1_main_2
+ph1_main_3
+ph1_main_4
+ph2_bg_1
+ph2_bg_2
+ph2_bg_3
+ph2_bg_4
+ph3_fs_1
+ph3_fs_2
+ph4_mr_1
+ph4_mr_2
