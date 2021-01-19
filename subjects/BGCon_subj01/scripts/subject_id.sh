@@ -4,6 +4,6 @@
 
 
  YEAR_DICOM=`date +%Y`
-LAB='Turk-B'
+LAB='DeepM'
 
 SUBJ=BGCon_subj01

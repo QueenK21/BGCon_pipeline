@@ -15,11 +15,12 @@ PROJ_DIR=../../
 SUBJECT_DIR=$PROJ_DIR/subjects/$SUBJ
 
 RUNORDER_FILE=run-order.txt
+DICOMLIST=dicomlist.sh
 
 DATA_DIR=data
 SCRIPT_DIR=scripts
 FSF_DIR=fsf
-DICOM_ARCHIVE=data
+DICOM_ARCHIVE=data/dicom
 NIFTI_DIR=data/nifti
 QA_DIR=data/qa
 BEHAVIORAL_DATA_DIR=data/behavioral
@@ -29,7 +30,7 @@ EV_DIR=design
 BEHAVIORAL_OUTPUT_DIR=output/behavioral
 
 #FSL directory
-FSL_DIR = usr/local/fsl
+FSL_DIR=usr/local/fsl
 
 # Fill in below variables to fit your roi analysis -- all are used in roi.sh or scripts called within it
 ROI_COORDS_FILE=design/roi.txt
