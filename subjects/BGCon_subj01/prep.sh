@@ -9,7 +9,10 @@ set -e
 source globals.sh
 
 #bash scripts/convert-and-wrap-raw-data.sh $DICOM_ARCHIVE $NIFTI_DIR $SUBJ $RUNORDER_FILE
-bash scripts/convert-dcm2niix.sh $DICOM_ARCHIVE $NIFTI_DIR $SUBJ $RUNORDER_FILE $DICOMLIST
+bash scripts/convert-dcm2niix.sh $DICOM_ARCHIVE $NIFTI_DIR $SUBJ $RUNORDER_FILE
 bash scripts/qa-wrapped-data.sh $NIFTI_DIR $QA_DIR
 bash scripts/reorient-to-las.sh $NIFTI_DIR
 bash scripts/render-fsf-templates.sh
+
+#extract brain 
+bet $NIFTI_DIR/*MPRAGE_1*.nii $NIFTI_DIR/${SUBJ}_t1_mprage01_brain.nii
